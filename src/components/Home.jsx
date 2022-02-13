@@ -52,7 +52,7 @@ function Home() {
           {Array(totalMinted + 1)
             .fill(0)
             .map((_, i) => (
-              <div key={i} className="col-4 p-2">
+              <div key={i} className="col-3 p-2">
                 <NFTImage tokenId={i} getCount={getCount} />
               </div>
             ))}
