@@ -5,7 +5,6 @@ import Web3 from 'web3/dist/web3.min.js'
 
 import { CONTACT_ABI } from '../abi/abi.js';
 
-import NFT from '../artifacts/contracts/mytoken.sol/NFT.json';
 
 const contractAddress = '0xBa1391333c8389607a69Bc5bbdb12395C9782d35';
 
