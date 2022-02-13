@@ -44,7 +44,7 @@ function Home() {
 
       <div class="container">
         <div class="row justify-content-center">
-          <h1 style="font-family: 'Shizuru'">Pretty Funckies</h1>
+          <h1 class="titulo">Pretty Funckies</h1>
         </div>
       </div>
       <div className="container">
