@@ -66,7 +66,7 @@ function NFTImage({ tokenId, getCount }) {
 
   const contentId = 'QmZJwMpCwXy56fYELABUSA76MyviN6nrvF8K69womDKNhW';
   const metadataURI = `https://gateway.pinata.cloud/ipfs/QmPgv7HincTCBVBZigJUxaC1QDG3u8t3zdYnHtkfD8qUqY/${tokenId}`;
-  const imageURI = `https://gateway.pinata.cloud/ipfs/${contentId}/${tokenId}.png`;
+  const imageURI = `https://ipfs.io/ipfs/${contentId}/${tokenId}.png`;
 //   const imageURI = `img/${tokenId}.png`;
 
   const [isMinted, setIsMinted] = useState(false);
