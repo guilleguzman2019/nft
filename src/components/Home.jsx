@@ -44,7 +44,7 @@ function Home() {
 
       <div class="container">
         <div class="row justify-content-center">
-          <h1 class="titulo">Pretty Funckies Token</h1>
+          <h1 class="titulo">Pretty Funckies Token final</h1>
         </div>
       </div>
       <div className="container">
