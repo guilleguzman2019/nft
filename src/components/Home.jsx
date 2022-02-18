@@ -6,7 +6,7 @@ import Web3 from 'web3/dist/web3.min.js'
 import { CONTACT_ABI } from '../abi/abi.js';
 
 
-const contractAddress = '0x10580a0428bf14c12E223e9cC2C281De667A332C';
+const contractAddress = '0x8566FAe37C9d0Bc41f0210A08939aC936A3168cE';
 
 const web3 = new Web3(window.ethereum);
 
