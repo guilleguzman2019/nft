@@ -44,6 +44,7 @@ function Home() {
 
       <div class="container">
         <div class="row justify-content-center">
+          <h3>Total minteado hasta el momento {totalMinted}/20000</h3>
           <h1 class="titulo">Pretty Funckies Token final</h1>
         </div>
       </div>
