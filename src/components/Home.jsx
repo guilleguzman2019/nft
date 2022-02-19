@@ -6,7 +6,7 @@ import Web3 from 'web3/dist/web3.min.js'
 import { CONTACT_ABI } from '../abi/abi.js';
 
 
-const contractAddress = '0x8566FAe37C9d0Bc41f0210A08939aC936A3168cE';
+const contractAddress = '0x21bc1c46bbb03bfd842030cb9bae67b549687847';
 
 const web3 = new Web3(window.ethereum);
 
@@ -44,7 +44,9 @@ function Home() {
 
       <div class="container">
         <div class="row justify-content-center">
-          <h4 class="titulo">Total minteado {totalMinted}/20000</h4>
+          <h4 class="titulo">Total minteado {totalMinted}/20000</h4>>
+        </div>
+        <div class="row justify-content-center">
           <h1 class="titulo">Pretty Funckies Token final</h1>
         </div>
       </div>
