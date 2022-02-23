@@ -14,8 +14,8 @@ code {
 
 .titulo{
   
-  font-family: 'Kanit', sans-serif;
-  color: white;
-  font-weight: 400;
-
+  font-family: Kanit,sans-serif;
+    color: #28517e;
+    font-weight: 400;
+    background-color: #b7d9ff;
 }
