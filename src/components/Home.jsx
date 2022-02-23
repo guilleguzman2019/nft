@@ -48,7 +48,6 @@ function Home() {
     .send({ from: accounts[0], gas: 0, value: price  })
 
     await result.wait();
-    getMintedStatus();
     getCount();
   };
 
