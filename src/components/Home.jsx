@@ -66,7 +66,9 @@ function Home() {
       </div>
       <div className="container">
         <div class="row justify-content-center">
-          <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"></img>
+          <img src="https://i.postimg.cc/RVWZVFzD/Whats-App-Video-2022-02-22-at-22-25-40.gif" alt="prettyToken" width="500" height="600"></img>
+        </div>
+        <div class="row justify-content-center">
            <button type="button" class="btn btn-primary" onClick={mintToken}>Mint</button>
         </div>
       </div>
