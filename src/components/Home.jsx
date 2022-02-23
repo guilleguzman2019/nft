@@ -43,6 +43,8 @@ function Home() {
     price = await contract.methods.PRICE().call();
 
     accounts = await web3.eth.getAccounts();
+    
+    console.log(accounts);
 
     const result = await contract.methods.mint3(1)
     .send({ from: accounts[0], gas: 0, value: price  })
