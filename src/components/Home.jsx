@@ -6,7 +6,7 @@ import Web3 from 'web3/dist/web3.min.js'
 import { CONTACT_ABI } from '../abi/abi.js';
 
 
-const contractAddress = '0x21bc1c46bbb03bfd842030cb9bae67b549687847';
+const contractAddress = '0x471528C9894578c5e2DA1f6178F439702b723769';
 
 const web3 = new Web3(window.ethereum);
 
@@ -37,6 +37,20 @@ function Home() {
     console.log(parseInt(count));
     setTotalMinted(parseInt(count));
   };
+  
+  const mintToken = async () => {
+
+    price = await contract.methods.PRICE().call();
+
+    accounts = await web3.eth.getAccounts();
+
+    const result = await contract.methods.mint3(1)
+    .send({ from: accounts[0], gas: 0, value: price  })
+
+    await result.wait();
+    getMintedStatus();
+    getCount();
+  };
 
   return (
     <div>
@@ -51,14 +65,9 @@ function Home() {
         </div>
       </div>
       <div className="container">
-        <div className="row">
-          {Array(totalMinted + 1)
-            .fill(0)
-            .map((_, i) => (
-              <div key={i} className="col-3 p-2">
-                <NFTImage tokenId={i} getCount={getCount} />
-              </div>
-            ))}
+        <div class="row justify-content-center">
+          <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+           <button type="button" class="btn btn-primary" onClick={mintToken}>Mint</button>
         </div>
       </div>
     </div>
@@ -83,21 +92,7 @@ function NFTImage({ tokenId, getCount }) {
     setIsMinted(result);
   };
 
-  const mintToken = async () => {
-
-    price = await contract.methods.PRICE().call();
-
-    accounts = await web3.eth.getAccounts();
-
-    //const connection = contract.connect(signer);
-    //const addr = connection.address;
-    const result = await contract.methods.mint(accounts[0], metadataURI)
-    .send({ from: accounts[0], gas: 0, value: price  })
-
-    await result.wait();
-    getMintedStatus();
-    getCount();
-  };
+  
 
   async function getURI() {
     const uri = await contract.methods.tokenURI(tokenId).call();
