@@ -8,7 +8,7 @@ import { CONTACT_ABI } from '../abi/abi.js';
 
 const contractAddress = '0x471528C9894578c5e2DA1f6178F439702b723769';
 
-const web3 = new Web3(window.ethereum);
+var web3 = new Web3(web3.currentProvider);
 
 var accounts
 var balance
