@@ -70,7 +70,7 @@ function Home() {
           <img src="https://i.postimg.cc/RVWZVFzD/Whats-App-Video-2022-02-22-at-22-25-40.gif" alt="prettyToken" width="400" height="400"></img>
         </div>
         <div class="row justify-content-center">
-           <button type="button" class="btn btn-primary mt-2" onClick={mintToken}>Mint</button>
+           <button type="button" class="btn btn-primary mt-2 mb-4" onClick={mintToken}>Mint</button>
         </div>
       </div>
     </div>
